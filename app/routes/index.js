@@ -5,3 +5,7 @@ export default Route.extend({
         this.replaceWith('rentals');
     }
 });
+
+
+
+

@@ -3,17 +3,15 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
-module('Integration | Helper | my-helper', function(hooks) {
+module('Integration | Helper | rental-property-type', function (hooks) {
   setupRenderingTest(hooks);
 
   // Replace this with your real tests.
-
   test('it renders correctly for a Standalone rental', async function(assert) {
     this.set('inputValue', 'Estate');
 
     await render(hbs`{{rental-property-type inputValue}}`);
 
-  
     assert.equal(this.element.textContent.trim(), 'Standalone');
   });
 
@@ -24,4 +22,5 @@ module('Integration | Helper | my-helper', function(hooks) {
 
     assert.equal(this.element.textContent.trim(), 'Community');
   });
+
 });
